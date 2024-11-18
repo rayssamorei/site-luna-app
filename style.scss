@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import "partials/_colors.scss";
+
+$spacing: 20px; /* Espaçamento base */
+$highlight-color: #AC6CC0; /* Cor do link ativo e hover */
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $color-fundo;
+    padding-top: 10px; /* Ajuste o valor para diminuir o espaço acima do conteúdo */
+    overflow-x: hidden; /* Impede que o conteúdo ultrapasse horizontalmente */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: #{$spacing * 2} 5%; /* Aumenta o espaçamento acima e abaixo */
+    margin-bottom: #{$spacing * 2}; /* Espaçamento entre cabeçalho e outros elementos */
+    background-color: $color-fundo;
+    color: #000000;
+    height: 100px; /* Tamanho fixo do cabeçalho */
+    position: relative; /* Garante que o cabeçalho não sobreponha a imagem */
+    z-index: 1;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Garante que a logo fique acima da imagem */
+    padding-left: 40px; /* Adiciona mais espaço à esquerda da logo */
+    padding-top: 20px;  /* Adiciona mais espaço acima da logo */
+}
+
+.header__logo img {
+    height: 80px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+.header__name {
+    font-size: 2rem; /* Tamanho da fonte do nome "Luna" */
+    font-weight: 400; /* Ajuste do peso da fonte (regular) */
+    z-index: 2; /* Garante que o nome fique acima da imagem */
+    color: $color-segunda-parte;
+}
+
+.header__nav ul {
+    list-style: none;
+    display: flex;
+    gap: #{$spacing * 3}; /* Aumenta o espaçamento entre os itens */
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    font-size: 0.8rem; /* Diminui o tamanho da fonte dos links */
+    transition: color 0.3s;
+}
+
+.header__nav ul li a:hover {
+    color: $highlight-color; /* Cor no hover */
+}
+
+.header__nav ul li a:focus,
+.header__nav ul li a:active {
+    color: $highlight-color; /* Cor no clique */
+}
+
+.header__nav ul li a.default-active {
+    color: $highlight-color; /* Cor roxa direta */
+}
+
+.header__nav ul li a.header__download {
+    border: 2px solid #000000; /* Adiciona borda */
+    border-radius: 8px;
+    padding: 5px 10px; /* Ajusta o tamanho interno */
+    font-weight: medium;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header__nav ul li a.header__download:hover {
+    background-color: $highlight-color; /* Adiciona cor de fundo no hover */
+    color: #fff;
+}
+
+/* A primeira imagem (quadrados) */
+.header__background {
+    position: absolute;
+    top: -120px; /* Move a imagem 100px para cima, além da borda da página */
+    left: 0; /* Alinha a imagem à esquerda */
+    width: 450%; /* A imagem ocupa toda a largura */
+    height: 500%; /* A altura será ajustada automaticamente */
+    background-image: url('assets/quadrados.png'); /* Caminho da imagem */
+    background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: top left; /* Centraliza a imagem */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+/* A segunda imagem */
+.header__background-second {
+    position: absolute;
+    top: 350px; /* Ajuste a posição para ficar abaixo da primeira imagem */
+    left: 0;
+    width: 380%; /* A largura pode ser ajustada conforme necessário */
+    left: -21px; /* Move a segunda imagem mais para a esquerda */
+    height: 500%; /* Ajuste a altura para ficar adequada ao layout */
+    background-image: url('assets/quadrados2.png'); /* Caminho da nova imagem */
+    background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: -2; /* Garante que esta imagem fique atrás do conteúdo */
+}
+.header__background-top {
+    position: absolute;
+    top: 180px; /* Coloca a imagem no topo */
+    left: 205px; /* Coloca a imagem no canto direito */
+    width: 420%; /* Ajuste conforme necessário */
+    height: 380%; /* Ajuste conforme necessário */
+    background-image: url('assets/celulares.png'); /* Caminho da imagem */
+    background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: top left; /* Centraliza a imagem na posição */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+.header__background-four {
+    position: absolute;
+    top: 130px; /* Coloca a imagem no topo */
+    left: 5px; /* Coloca a imagem no canto direito */
+    width: 520%; /* Ajuste conforme necessário */
+    height: 480%; /* Ajuste conforme necessário */
+    background-image: url('assets/logo2.png'); /* Caminho da imagem */
+    background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: top left; /* Centraliza a imagem na posição */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+/* Estilo para o texto */
+.header__text {
+    position: absolute;  /* Permite posicionamento livre */
+    right: 0;  /* Alinha o bloco de texto à direita da tela */
+    padding-right: 5%;  /* Adiciona uma margem à direita */
+    padding-top: 20px;  /* Espaçamento para o topo, se necessário */
+    width: 50%;  /* Ajusta a largura do texto conforme necessário */
+    font-family: 'Poppins', sans-serif;  /* Fonte Poppins */
+    font-weight: 400;  /* Peso regular */
+    color: #000;  /* Cor preta */
+    font-size: 3.5rem;  /* Tamanho da fonte mais compacto */
+    text-align: left;  /* Alinha o texto dentro do bloco à esquerda */
+}
+
+/* Estilo para a palavra "segurança" */
+.header__text .highlight {
+    font-weight: 900; /* Aplica o peso 'black' (negrito mais forte) */
+    color: #AC6CC0;  /* Cor roxa especificada */
+}
+.header__text-2{
+    position: absolute;  /* Permite posicionamento livre */
+    right: 0;  /* Alinha o bloco de texto à direita da tela */
+    padding-right: 5%;  /* Adiciona uma margem à direita */
+    padding-top: 280px;  /* Espaçamento para o topo, se necessário */
+    width: 50%;  /* Ajusta a largura do texto conforme necessário */
+    font-family: 'Poppins', sans-serif;  /* Fonte Poppins */
+    font-weight: 400;  /* Peso regular */
+    color: #000;  /* Cor preta */
+    font-size: 1rem;  /* Tamanho da fonte mais compacto */
+    text-align: left;  /* Alinha o texto dentro do bloco à esquerda */
+    font-weight: 100;
+}
+/* Estilo do botão "Comece agora" */
+.button {
+    position: absolute; /* Posicionamento absoluto */
+    left: 55%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta posição ao centro real */
+    margin-top: 380px; /* Espaçamento vertical */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem; /* Tamanho da fonte */
+    letter-spacing: 1.5px; /* Espaçamento entre as letras */
+    color: white; /* Cor do texto */
+    background: linear-gradient(120deg, #AC6CC0 12%, #854599 100%); /* Gradiente */
+    border: none; /* Remove bordas */
+    border-radius: 45px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    transition: background 0.3s, transform 0.3s;
+    height: 50px;
+    width: 180px; /* Aumenta a largura do botão */
+    line-height: 20px; /* Centraliza o texto verticalmente */
+    appearance: none; /* Remove estilos nativos */
+}
+
+.button:hover {
+    background: linear-gradient(120deg, #AC6CC0 50%, #854599 100%); /* Gradiente no hover */
+    transform: translateX(-50%) scale(1.05); /* Efeito de aumento */
+}
+
+.button:focus {
+    outline: none; /* Remove contorno padrão ao focar */
+}
