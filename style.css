@@ -81,17 +81,18 @@ body {
 }
 
 .header__nav ul li a.header__download {
-  border: 2px solid #000000; /* Adiciona borda */
-  border-radius: 8px;
+  border: 2px solid #3B114B; /* Adiciona borda */
+  border-radius: 17px;
   padding: 5px 10px; /* Ajusta o tamanho interno */
   font-weight: medium;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 .header__nav ul li a.header__download:hover {
-  background-color: #AC6CC0; /* Adiciona cor de fundo no hover */
-  color: #fff;
+  background-color: #3B114B; /* Adiciona cor de fundo no hover */
+  border: 2px solid #3B114B;
+  color: #D1A4E2;
 }
 
 /* A primeira imagem (quadrados) */
