@@ -44,6 +44,14 @@ body {
   height: 80px; /* Ajuste o tamanho da logo conforme necessário */
 }
 
+.logo-svg {
+  width: 140px; /* Largura desejada */
+  height: auto; /* Mantém a proporção */
+  display: block; /* Centralização opcional */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding-left: 45px;
+}
+
 .header__name {
   font-size: 2rem; /* Tamanho da fonte do nome "Luna" */
   font-weight: 400; /* Ajuste do peso da fonte (regular) */
@@ -100,7 +108,7 @@ body {
   top: -120px; /* Move a imagem 100px para cima, além da borda da página */
   left: 0; /* Alinha a imagem à esquerda */
   width: 450%; /* A imagem ocupa toda a largura */
-  height: 500%; /* A altura será ajustada automaticamente */
+  height: 490%; /* A altura será ajustada automaticamente */
   background-image: url("assets/quadrados.png"); /* Caminho da imagem */
   background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
   background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -111,10 +119,10 @@ body {
 /* A segunda imagem */
 .header__background-second {
   position: absolute;
-  top: 350px; /* Ajuste a posição para ficar abaixo da primeira imagem */
+  top: 340px; /* Ajuste a posição para ficar abaixo da primeira imagem */
   left: 0;
   width: 380%; /* A largura pode ser ajustada conforme necessário */
-  left: -21px; /* Move a segunda imagem mais para a esquerda */
+  left: -2px; /* Move a segunda imagem mais para a esquerda */
   height: 500%; /* Ajuste a altura para ficar adequada ao layout */
   background-image: url("assets/quadrados2.png"); /* Caminho da nova imagem */
   background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
@@ -125,23 +133,23 @@ body {
 
 .header__background-top {
   position: absolute;
-  top: 180px; /* Coloca a imagem no topo */
-  left: 205px; /* Coloca a imagem no canto direito */
+  top: 98px; /* Coloca a imagem no topo */
+  left: -40px; /* Coloca a imagem no canto direito */
   width: 420%; /* Ajuste conforme necessário */
-  height: 380%; /* Ajuste conforme necessário */
+  height: 550%; /* Ajuste conforme necessário */
   background-image: url("assets/celulares.png"); /* Caminho da imagem */
   background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
   background-repeat: no-repeat; /* Impede a repetição da imagem */
   background-position: top left; /* Centraliza a imagem na posição */
-  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+  z-index: 0; /* Coloca a imagem atrás do conteúdo */
 }
 
 .header__background-four {
   position: absolute;
-  top: 130px; /* Coloca a imagem no topo */
-  left: 5px; /* Coloca a imagem no canto direito */
-  width: 520%; /* Ajuste conforme necessário */
-  height: 480%; /* Ajuste conforme necessário */
+  top: 98px; /* Coloca a imagem no topo */
+  left: -50px; /* Coloca a imagem no canto direito */
+  width: 500%; /* Ajuste conforme necessário */
+  height: 500%; /* Ajuste conforme necessário */
   background-image: url("assets/logo2.png"); /* Caminho da imagem */
   background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
   background-repeat: no-repeat; /* Impede a repetição da imagem */
@@ -169,11 +177,11 @@ body {
   color: #AC6CC0; /* Cor roxa especificada */
 }
 
-.header__text-2 {
+.header__text .header__text-2 {
   position: absolute; /* Permite posicionamento livre */
   right: 0; /* Alinha o bloco de texto à direita da tela */
   padding-right: 5%; /* Adiciona uma margem à direita */
-  padding-top: 280px; /* Espaçamento para o topo, se necessário */
+  padding-top: 30px; /* Espaçamento para o topo, se necessário */
   width: 50%; /* Ajusta a largura do texto conforme necessário */
   font-family: "Poppins", sans-serif; /* Fonte Poppins */
   font-weight: 400; /* Peso regular */
@@ -181,12 +189,13 @@ body {
   font-size: 1rem; /* Tamanho da fonte mais compacto */
   text-align: left; /* Alinha o texto dentro do bloco à esquerda */
   font-weight: 100;
+  left: 13px;
 }
 
 /* Estilo do botão "Comece agora" */
-.button {
+.header__text .button {
   position: absolute; /* Posicionamento absoluto */
-  left: 55%; /* Centraliza horizontalmente */
+  left: 13%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Ajusta posição ao centro real */
   margin-top: 380px; /* Espaçamento vertical */
   padding: 10px 20px; /* Espaçamento interno */
@@ -207,6 +216,7 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; /* Remove estilos nativos */
+  top: 80px;
 }
 
 .button:hover {
@@ -216,4 +226,40 @@ body {
 
 .button:focus {
   outline: none; /* Remove contorno padrão ao focar */
+}
+
+/* Estilo para a imagem do retângulo */
+.rectangle-image-container {
+  text-align: center; /* Centraliza a imagem */
+  margin-top: 800px; /* Espaço entre o conteúdo anterior e a imagem */
+}
+
+.rectangle-image {
+  width: 100%; /* Ajuste o tamanho conforme necessário */
+  height: 100%; /* Ajuste o tamanho conforme necessário */
+  z-index: 1;
+}
+
+.bola-e-robo {
+  text-align: left; /* Centraliza a imagem */
+}
+
+.robo-bola {
+  width: 840px; /* Ajuste o tamanho conforme necessário */
+  height: 690px;
+  z-index: 2;
+  position: absolute; /* Permite mover a imagem fora do retângulo */
+  top: 908px; /* Move metade da imagem para fora do retângulo */
+  left: -300px;
+}
+
+.quadrado-roxo {
+  top: 760px;
+  position: absolute;
+  left: 1000px;
+}
+
+.quadrado-roxo-img {
+  width: 400px;
+  height: 400px;
 }/*# sourceMappingURL=style.css.map */
