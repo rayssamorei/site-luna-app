@@ -192,7 +192,7 @@ body {
   left: 56%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Ajusta posição ao centro real */
   margin-top: 350px; /* Espaçamento vertical */
-  padding: 10px 20px; /* Espaçamento interno */
+  padding: 15px 20px; /* Espaçamento interno */
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 0.9rem; /* Tamanho da fonte */
