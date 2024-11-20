@@ -69,7 +69,7 @@ body {
 
 .header__nav ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #3B114B;
   font-weight: normal;
   font-size: 0.8rem; /* Diminui o tamanho da fonte dos links */
   transition: color 0.3s;
@@ -89,17 +89,19 @@ body {
 }
 
 .header__nav ul li a.header__download {
-  border: 2px solid #000000; /* Adiciona borda */
-  border-radius: 8px;
+  color: #3B114B; /* cor do texto */
+  border: 1px solid #3B114B; /* Adiciona borda */
+  border-radius: 17px; /* corner radius padrão figma */
   padding: 5px 10px; /* Ajusta o tamanho interno */
   font-weight: medium;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 .header__nav ul li a.header__download:hover {
-  background-color: #AC6CC0; /* Adiciona cor de fundo no hover */
-  color: #fff;
+  background-color: #3B114B; /* Adiciona cor de fundo no hover */
+  border: 1px solid #3B114B;
+  color: #D1A4E2;
 }
 
 /* A primeira imagem (quadrados) */
@@ -159,16 +161,17 @@ body {
 
 /* Estilo para o texto */
 .header__text {
+  font-family: "Montserrat", sans-serif; /* fonte nova - montserrat */
   position: absolute; /* Permite posicionamento livre */
   right: 0; /* Alinha o bloco de texto à direita da tela */
   padding-right: 5%; /* Adiciona uma margem à direita */
   padding-top: 20px; /* Espaçamento para o topo, se necessário */
   width: 50%; /* Ajusta a largura do texto conforme necessário */
-  font-family: "Poppins", sans-serif; /* Fonte Poppins */
   font-weight: 400; /* Peso regular */
   color: #000; /* Cor preta */
-  font-size: 3.5rem; /* Tamanho da fonte mais compacto */
+  font-size: 60px; /* Tamanho da fonte mais compacto */
   text-align: left; /* Alinha o texto dentro do bloco à esquerda */
+  line-height: 100% ;/* definir entrelinha do texto */
 }
 
 /* Estilo para a palavra "segurança" */
@@ -182,23 +185,23 @@ body {
   right: 0; /* Alinha o bloco de texto à direita da tela */
   padding-right: 5%; /* Adiciona uma margem à direita */
   padding-top: 30px; /* Espaçamento para o topo, se necessário */
-  width: 50%; /* Ajusta a largura do texto conforme necessário */
+  width: 100%; /* Ajusta a largura do texto conforme necessário */
   font-family: "Poppins", sans-serif; /* Fonte Poppins */
   font-weight: 400; /* Peso regular */
   color: #000; /* Cor preta */
   font-size: 1rem; /* Tamanho da fonte mais compacto */
   text-align: left; /* Alinha o texto dentro do bloco à esquerda */
   font-weight: 100;
-  left: 13px;
+  line-height: 160% ;/* definir entrelinha do texto */
 }
 
 /* Estilo do botão "Comece agora" */
 .header__text .button {
   position: absolute; /* Posicionamento absoluto */
-  left: 13%; /* Centraliza horizontalmente */
+  left: 12%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Ajusta posição ao centro real */
-  margin-top: 380px; /* Espaçamento vertical */
-  padding: 10px 20px; /* Espaçamento interno */
+  margin-top: 300px; /* Espaçamento vertical */
+  padding: 15px 20px; /* Espaçamento interno */
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 0.9rem; /* Tamanho da fonte */
