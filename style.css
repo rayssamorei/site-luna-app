@@ -24,6 +24,7 @@ body {
   align-items: center;
   padding: 40px 5%; /* Aumenta o espaçamento acima e abaixo */
   margin-bottom: 40px; /* Espaçamento entre cabeçalho e outros elementos */
+  margin-right: 60px;
   background-color: #EEEEEE;
   color: #000000;
   height: 100px; /* Tamanho fixo do cabeçalho */
@@ -45,24 +46,17 @@ body {
 }
 
 .logo-svg {
-  width: 140px; /* Largura desejada */
+  width: 125px; /* Largura desejada */
   height: auto; /* Mantém a proporção */
   display: block; /* Centralização opcional */
   margin: 0 auto; /* Centraliza horizontalmente */
   padding-left: 45px;
 }
 
-.header__name {
-  font-size: 2rem; /* Tamanho da fonte do nome "Luna" */
-  font-weight: 400; /* Ajuste do peso da fonte (regular) */
-  z-index: 2; /* Garante que o nome fique acima da imagem */
-  color: #3B114B;
-}
-
 .header__nav ul {
   list-style: none;
   display: flex;
-  gap: 60px; /* Aumenta o espaçamento entre os itens */
+  gap: 65px; /* Aumenta o espaçamento entre os itens */
   padding: 0;
   margin: 0;
 }
@@ -70,7 +64,7 @@ body {
 .header__nav ul li a {
   text-decoration: none;
   color: #3B114B;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 0.8rem; /* Diminui o tamanho da fonte dos links */
   transition: color 0.3s;
 }
@@ -169,7 +163,7 @@ body {
   width: 50%; /* Ajusta a largura do texto conforme necessário */
   font-weight: 400; /* Peso regular */
   color: #000; /* Cor preta */
-  font-size: 60px; /* Tamanho da fonte mais compacto */
+  font-size: 65px; /* Tamanho da fonte mais compacto */
   text-align: left; /* Alinha o texto dentro do bloco à esquerda */
   line-height: 100% ;/* definir entrelinha do texto */
 }
@@ -189,7 +183,7 @@ body {
   font-family: "Poppins", sans-serif; /* Fonte Poppins */
   font-weight: 400; /* Peso regular */
   color: #000; /* Cor preta */
-  font-size: 1rem; /* Tamanho da fonte mais compacto */
+  font-size: 16.5px; /* Tamanho da fonte mais compacto */
   text-align: left; /* Alinha o texto dentro do bloco à esquerda */
   font-weight: 100;
   line-height: 160% ;/* definir entrelinha do texto */
@@ -198,13 +192,13 @@ body {
 /* Estilo do botão "Comece agora" */
 .header__text .button {
   position: absolute; /* Posicionamento absoluto */
-  left: 12%; /* Centraliza horizontalmente */
+  left: 16%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Ajusta posição ao centro real */
-  margin-top: 300px; /* Espaçamento vertical */
+  margin-top: 275px; /* Espaçamento vertical */
   padding: 15px 20px; /* Espaçamento interno */
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 0.9rem; /* Tamanho da fonte */
+  font-size: 17px; /* Tamanho da fonte */
   letter-spacing: 1.5px; /* Espaçamento entre as letras */
   color: white; /* Cor do texto */
   background: linear-gradient(120deg, #AC6CC0 12%, #854599 100%); /* Gradiente */
@@ -212,14 +206,15 @@ body {
   border-radius: 45px; /* Bordas arredondadas */
   cursor: pointer; /* Cursor de ponteiro */
   text-align: center; /* Centraliza o texto horizontalmente */
-  transition: background 0.3s, transform 0.3s;
-  height: 50px;
-  width: 180px; /* Aumenta a largura do botão */
+  transition: 0.3s, transform 0.3s;
+  height: 55px;
+  width: 250px; /* Aumenta a largura do botão */
   line-height: 20px; /* Centraliza o texto verticalmente */
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; /* Remove estilos nativos */
   top: 80px;
+  border: 3.5px solid #C2A2CC; /* Adiciona borda */
 }
 
 .button:hover {
@@ -248,7 +243,7 @@ body {
 }
 
 .robo-bola {
-  width: 840px; /* Ajuste o tamanho conforme necessário */
+  width: 900px; /* Ajuste o tamanho conforme necessário */
   height: 690px;
   z-index: 2;
   position: absolute; /* Permite mover a imagem fora do retângulo */
