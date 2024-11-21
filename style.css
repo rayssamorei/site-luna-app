@@ -19,6 +19,7 @@ body {
 }
 
 .header {
+  margin-right: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,24 +46,17 @@ body {
 }
 
 .logo-svg {
-  width: 140px; /* Largura desejada */
+  width: 125px; /* Largura desejada */
   height: auto; /* Mantém a proporção */
   display: block; /* Centralização opcional */
   margin: 0 auto; /* Centraliza horizontalmente */
   padding-left: 45px;
 }
 
-.header__name {
-  font-size: 2rem; /* Tamanho da fonte do nome "Luna" */
-  font-weight: 400; /* Ajuste do peso da fonte (regular) */
-  z-index: 2; /* Garante que o nome fique acima da imagem */
-  color: #3B114B;
-}
-
 .header__nav ul {
   list-style: none;
   display: flex;
-  gap: 60px; /* Aumenta o espaçamento entre os itens */
+  gap: 65px; /* Aumenta o espaçamento entre os itens */
   padding: 0;
   margin: 0;
 }
@@ -70,7 +64,7 @@ body {
 .header__nav ul li a {
   text-decoration: none;
   color: #000000;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 0.8rem; /* Diminui o tamanho da fonte dos links */
   transition: color 0.3s;
 }
@@ -89,28 +83,31 @@ body {
 }
 
 .header__nav ul li a.header__download {
-  border: 2px solid #3B114B; /* Adiciona borda */
+  color: #3B114B; /* cor do texto */
+  border: 1px solid #3B114B; /* Adiciona borda */
   border-radius: 20px;
-  padding: 8px 10px; /* Ajusta o tamanho interno */
+  padding: 5px 10px; /* Ajusta o tamanho interno */
   font-weight: medium;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 .header__nav ul li a.header__download:hover {
-  background-color: #AC6CC0; /* Adiciona cor de fundo no hover */
-  color: #fff;
+  background-color: #3B114B; /* Adiciona cor de fundo no hover */
+  border: 1px solid #3B114B;
+  color: #D1A4E2;
 }
 
 /* A primeira imagem (quadrados) */
 .header__background {
   position: absolute;
-  top: -120px; /* Move a imagem 100px para cima, além da borda da página */
-  left: 0; /* Alinha a imagem à esquerda */
-  width: 450%; /* A imagem ocupa toda a largura */
-  height: 490%; /* A altura será ajustada automaticamente */
-  background-image: url("assets/quadrados.png"); /* Caminho da imagem */
-  background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
+  top: -30px; /* Move a imagem 50px para cima, além da borda da página */
+  left: 23px; /* Alinha a imagem à esquerda */
+  width: 100%; /* A imagem ocupa toda a largura */
+  max-width: 100px;
+  height: 100%; /* A altura será ajustada automaticamente */
+  max-height: 100px;
+  background-size: cover; /* A imagem será redimensionada para caber na área sem cortes */
   background-repeat: no-repeat; /* Impede a repetição da imagem */
   background-position: top left; /* Centraliza a imagem */
   z-index: -1; /* Coloca a imagem atrás do conteúdo */
@@ -120,12 +117,12 @@ body {
 .header__background-second {
   position: absolute;
   top: 340px; /* Ajuste a posição para ficar abaixo da primeira imagem */
-  left: 0;
-  width: 380%; /* A largura pode ser ajustada conforme necessário */
-  left: -2px; /* Move a segunda imagem mais para a esquerda */
-  height: 500%; /* Ajuste a altura para ficar adequada ao layout */
-  background-image: url("assets/quadrados2.png"); /* Caminho da nova imagem */
-  background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
+  width: 100%; /* A largura pode ser ajustada conforme necessário */
+  max-width: 100px;
+  height: 100%; /* A altura será ajustada automaticamente */
+  max-height: 100px;
+  left: 23px; /* Move a segunda imagem mais para a esquerda */
+  background-size: cover; /* A imagem será redimensionada para caber na área sem cortes */
   background-repeat: no-repeat;
   background-position: top left;
   z-index: -2; /* Garante que esta imagem fique atrás do conteúdo */
@@ -133,12 +130,11 @@ body {
 
 .header__background-top {
   position: absolute;
-  top: 98px; /* Coloca a imagem no topo */
-  left: -40px; /* Coloca a imagem no canto direito */
+  top: 120px; /* Coloca a imagem no topo */
+  left: -20px; /* Coloca a imagem no canto direito */
   width: 420%; /* Ajuste conforme necessário */
   height: 550%; /* Ajuste conforme necessário */
-  background-image: url("assets/celulares.png"); /* Caminho da imagem */
-  background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
+  background-size: cover; /* A imagem será redimensionada para caber na área sem cortes */
   background-repeat: no-repeat; /* Impede a repetição da imagem */
   background-position: top left; /* Centraliza a imagem na posição */
   z-index: 0; /* Coloca a imagem atrás do conteúdo */
@@ -146,11 +142,10 @@ body {
 
 .header__background-four {
   position: absolute;
-  top: 98px; /* Coloca a imagem no topo */
-  left: -50px; /* Coloca a imagem no canto direito */
+  top: 125px; /* Coloca a imagem no topo */
+  left: 23px; /* Coloca a imagem no canto direito */
   width: 500%; /* Ajuste conforme necessário */
   height: 500%; /* Ajuste conforme necessário */
-  background-image: url("assets/logo2.png"); /* Caminho da imagem */
   background-size: contain; /* A imagem será redimensionada para caber na área sem cortes */
   background-repeat: no-repeat; /* Impede a repetição da imagem */
   background-position: top left; /* Centraliza a imagem na posição */
@@ -164,11 +159,12 @@ body {
   padding-right: 5%; /* Adiciona uma margem à direita */
   padding-top: 20px; /* Espaçamento para o topo, se necessário */
   width: 50%; /* Ajusta a largura do texto conforme necessário */
-  font-family: "Poppins", sans-serif; /* Fonte Poppins */
+  font-family: "Montserrat", sans-serif; /* Fonte Poppins */
   font-weight: 400; /* Peso regular */
   color: #000; /* Cor preta */
-  font-size: 3.5rem; /* Tamanho da fonte mais compacto */
+  font-size: 65px; /* Tamanho da fonte mais compacto */
   text-align: left; /* Alinha o texto dentro do bloco à esquerda */
+  line-height: 100%;
 }
 
 /* Estilo para a palavra "segurança" */
@@ -179,53 +175,45 @@ body {
 
 .header__text .header__text-2 {
   position: absolute; /* Permite posicionamento livre */
-  right: 0; /* Alinha o bloco de texto à direita da tela */
-  padding-right: 5%; /* Adiciona uma margem à direita */
   padding-top: 30px; /* Espaçamento para o topo, se necessário */
-  width: 50%; /* Ajusta a largura do texto conforme necessário */
+  width: 100%; /* Ajusta a largura do texto conforme necessário */
   font-family: "Poppins", sans-serif; /* Fonte Poppins */
-  font-weight: 400; /* Peso regular */
+  font-weight: 300; /* Peso regular */
   color: #000; /* Cor preta */
-  font-size: 1rem; /* Tamanho da fonte mais compacto */
+  font-size: 17px; /* Tamanho da fonte mais compacto */
   text-align: left; /* Alinha o texto dentro do bloco à esquerda */
-  font-weight: 100;
-  left: 13px;
+  left: 0;
+  line-height: 150%;
 }
 
 /* Estilo do botão "Comece agora" */
 .header__text .button {
-  position: absolute; /* Posicionamento absoluto */
-  left: 13%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajusta posição ao centro real */
-  margin-top: 380px; /* Espaçamento vertical */
-  padding: 10px 20px; /* Espaçamento interno */
+  position: absolute;
+  left: 0;
+  margin-top: 280px;
+  padding: 10px 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 0.9rem; /* Tamanho da fonte */
-  letter-spacing: 1.5px; /* Espaçamento entre as letras */
-  color: white; /* Cor do texto */
-  background: linear-gradient(120deg, #AC6CC0 12%, #854599 100%); /* Gradiente */
-  border: none; /* Remove bordas */
-  border-radius: 45px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de ponteiro */
-  text-align: center; /* Centraliza o texto horizontalmente */
-  transition: background 0.3s, transform 0.3s;
-  height: 50px;
-  width: 180px; /* Aumenta a largura do botão */
-  line-height: 20px; /* Centraliza o texto verticalmente */
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; /* Remove estilos nativos */
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: linear-gradient(120deg, #AC6CC0 12%, #854599 100%);
+  border: none;
+  box-shadow: inset 0 0 0 3px #ffffff80;
+  border-radius: 45px;
+  cursor: pointer;
+  text-align: center;
+  transition: filter 0.3s, transform 0.3s; /* Usando 'filter' para suavidade */
+  height: 58px;
+  width: 235px;
+  line-height: 20px;
+  appearance: none;
   top: 80px;
 }
 
-.button:hover {
-  background: linear-gradient(120deg, #AC6CC0 50%, #854599 100%); /* Gradiente no hover */
-  transform: translateX(-50%) scale(1.05); /* Efeito de aumento */
-}
-
-.button:focus {
-  outline: none; /* Remove contorno padrão ao focar */
+.header__text .button:hover {
+  filter: brightness(1.1); /* Suaviza o gradiente */
+  transform: scale(1.05);
 }
 
 /* Estilo para a imagem do retângulo */
@@ -245,12 +233,12 @@ body {
 }
 
 .robo-bola {
-  width: 840px; /* Ajuste o tamanho conforme necessário */
+  width: 555px; /* Ajuste o tamanho conforme necessário */
   height: 690px;
   z-index: 2;
   position: absolute; /* Permite mover a imagem fora do retângulo */
   top: 908px; /* Move metade da imagem para fora do retângulo */
-  left: -300px;
+  left: 0;
 }
 
 .quadrado-roxo {
@@ -277,29 +265,29 @@ body {
 
 .texto-estilizado {
   font-family: "Poppins", sans-serif;
-  font-size: 18px; /* Ajuste conforme necessário */
+  font-size: 17px; /* Ajuste conforme necessário */
   color: #EEEEEE; /* Cor do texto */
-  top: 990px;
+  top: 1015px;
   left: 1215px;
   position: absolute;
   text-align: left;
 }
 
 .negrito {
-  font-weight: 700; /* Negrito */
+  font-weight: 800; /* Negrito */
   text-align: left;
 }
 
 .medium {
-  font-weight: 500; /* Estilo médio */
+  font-weight: 400; /* Estilo médio */
   text-align: left;
 }
 
 .texto-estilizado2 {
   font-family: "Poppins", sans-serif;
-  font-size: 18px; /* Ajuste conforme necessário */
+  font-size: 17px; /* Ajuste conforme necessário */
   color: #3B114B; /* Cor do texto */
-  top: 1250px;
+  top: 1260px;
   left: 1215px;
   position: absolute;
   text-align: left;
@@ -307,14 +295,14 @@ body {
 
 .texto-pq-oluna-svg {
   top: 995px;
-  left: 440px;
+  left: 497px;
   position: absolute;
   height: 50px;
 }
 
 .texto-part2 {
   top: 1080px;
-  left: 480px;
+  left: 500px;
   position: absolute;
   height: 320px;
 }
