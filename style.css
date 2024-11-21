@@ -83,14 +83,9 @@ body {
 }
 
 .header__nav ul li a.header__download {
-<<<<<<< HEAD
-  border: 2px solid #3B114B; /* Adiciona borda */
-  border-radius: 8px;
-=======
   color: #3B114B; /* cor do texto */
   border: 1px solid #3B114B; /* Adiciona borda */
   border-radius: 17px; /* corner radius padrão figma */
->>>>>>> 4ed7b375d48fd2e5b25fe80d5da25110f945b2de
   padding: 5px 10px; /* Ajusta o tamanho interno */
   font-weight: medium;
   cursor: pointer;
