@@ -93,7 +93,7 @@ body {
 }
 
 .header__nav ul li a.header__download {
-    border: 2px solid #000000; /* Adiciona borda */
+    border: 2px solid #3B114B; /* Adiciona borda */
     border-radius: 8px;
     padding: 5px 10px; /* Ajusta o tamanho interno */
     font-weight: medium;
@@ -254,4 +254,160 @@ body {
     width: 400px;
     height: 400px;
 }
+.quadrado-branco2{
+    top: 1250px;
+    position: absolute;
+    left: 800px;
+}
+.quadrado-branco-img{
+    width: 400px;
+    height: 400px;
+}
 
+.texto-estilizado {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; /* Ajuste conforme necessário */
+    color: #EEEEEE; /* Cor do texto */
+    top: 990px;
+    left: 1215px;
+    position: absolute;
+    text-align: left;
+}
+
+.negrito {
+    font-weight: 700; /* Negrito */
+    text-align: left;
+}
+
+.medium {
+    font-weight: 500; /* Estilo médio */
+    text-align: left;
+}
+.texto-estilizado2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; /* Ajuste conforme necessário */
+    color: #3B114B; /* Cor do texto */
+    top: 1250px;
+    left: 1215px;
+    position: absolute;
+    text-align: left;
+}
+
+.texto-pq-oluna-svg{
+    top: 995px;
+    left: 440px;
+    position: absolute;
+    height: 50px;
+
+}
+.texto-part2{
+    top: 1080px;
+    left: 480px;
+    position: absolute;
+    height: 320px;
+
+}
+.icone1{
+    top: 1800px;
+    left: 295px;
+    position: absolute;
+    height: 80px;
+}
+.icone2{
+    top: 1800px;
+    left: 1100px;
+    position: absolute;
+    height: 80px;
+}
+.icone-3{
+    top: 2130px;
+    left: 710px;
+    position: absolute;
+    height: 80px;
+}
+.texto-icones{
+    top: 1920px;
+    left: 120px;
+    position: absolute;
+    height: 500px;
+    margin-bottom: 500px;
+}
+
+.retangulo2{
+    text-align: center; /* Centraliza a imagem */
+    margin-top: 900px; /* Espaço entre o conteúdo anterior e a imagem */
+    width: 100%; /* Ajuste o tamanho conforme necessário */
+    height: 100%; /* Ajuste o tamanho conforme necessário */
+    z-index: 1;
+    top: 3150px;
+}
+.texto-muie{
+    text-align: left; /* Centraliza a imagem */
+    width: auto; /* Ajuste o tamanho conforme necessário */
+    height: 280px; /* Ajuste o tamanho conforme necessário */
+    z-index: 2;
+    top: 2700px;
+    left: 250px;
+    position: absolute;
+}
+.content {
+    min-height: 80vh; /* Para garantir que o footer fique no final da página */
+    padding: 20px;
+}
+
+/* Estilo do footer */
+.footer {
+    background-color: #EEEEEE;
+    color: #000;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    padding: 20px 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Área da logo no footer */
+.footer-left {
+    margin-left: 20px; /* Espaço da borda */
+}
+
+.footer-logo {
+    width: 120px;
+    height: 120px;
+}
+
+/* Área de texto e links no footer */
+.footer-right {
+    text-align: left;
+    margin-right: 20px; /* Espaço da borda */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre ícone e texto */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00aaff;
+}
