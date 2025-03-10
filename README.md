@@ -39,5 +39,11 @@ Acesse a landing page do Luna aqui: [https://lunaappce.com](https://lunaappce.co
    npm run sass
 5. Abra o arquivo index.html em seu navegador.
 
+## Colaboradores
+
+- [@isaac-diniz](https://github.com/isaac-diniz)
+- [@rayssamorei](https://github.com/rayssamorei)
+
+
 ## Licença
 Este projeto está licenciado sob a Licença MIT.
